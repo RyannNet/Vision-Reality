@@ -1,0 +1,162 @@
+body {
+  margin: 0;
+  font-family: 'Titillium Web', sans-serif;
+  background-image: url('1000056209-1736263394383.gif');
+  color: #f5f5f5;
+  line-height: 1.6;
+}
+
+header {
+  text-align: center;
+  padding: 2rem 1rem;
+  background-image: url('/airborne-ww2.gif');
+  color: #A79FFC;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+}
+
+header h1 {
+  font-size: 2.5rem;
+  margin: 0;
+}
+
+header p {
+  font-size: 1.2rem;
+  color: #a5a5a5;
+}
+
+main {
+  padding: 2rem;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.truths article {
+  margin-bottom: 2rem;
+  padding: 1rem;
+  background-image: url('20250107_165249.gif');
+  border-left: 0px solid #191919E0;
+  border-radius: 8px;
+  transition: 0.5s;
+  font-family: Cardo, sans serif;
+}
+.truths article:hover {
+  margin-bottom: 2rem;
+  background: #11101A;
+  border-left: 5px solid #1A1925;
+  border-radius: 8px;
+  padding: 30px;
+  transition: 0.5s;
+  font-size: 1.2rem;
+  color: #D4D7FF;
+  transition: 0.5s;
+margin:20px;
+}
+footer {
+  text-align: center;
+  padding: 1rem;
+  background: #3500FF17;
+  color: #FFF871;
+  font-size: 0.9rem;
+  border-top: 1px solid #333;
+  background-image: url('tsunami-icegif-9.gif');
+}
+.titillium-web-extralight {
+  font-family: "Titillium Web", serif;
+  font-weight: 200;
+  font-style: normal;
+}
+
+.titillium-web-light {
+  font-family: "Titillium Web", serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.titillium-web-regular {
+  font-family: "Titillium Web", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.titillium-web-semibold {
+  font-family: "Titillium Web", serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.titillium-web-bold {
+  font-family: "Titillium Web", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.titillium-web-black {
+  font-family: "Titillium Web", serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.titillium-web-extralight-italic {
+  font-family: "Titillium Web", serif;
+  font-weight: 200;
+  font-style: italic;
+}
+
+.titillium-web-light-italic {
+  font-family: "Titillium Web", serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.titillium-web-regular-italic {
+  font-family: "Titillium Web", serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.titillium-web-semibold-italic {
+  font-family: "Titillium Web", serif;
+  font-weight: 600;
+  font-style: italic;
+}
+
+.titillium-web-bold-italic {
+  font-family: "Titillium Web", serif;
+  font-weight: 700;
+  font-style: italic;
+}
+#lid {
+  animation: blink 2.4s infinite;
+  justify-content: center;
+  text-align: center;
+  position:cente;
+}
+#eye {
+  animation: squeeze 2.4s infinite;
+
+}
+
+@keyframes blink {
+  90% {
+    transform: none;
+    animation-timing-function: ease-in;
+  }
+  93% {
+    transform: translateY(15px) scaleY(0)
+  }
+  100% {
+    animation-timing-function: ease-out;
+  }
+}
+@keyframes squeeze {
+  90% {
+    transform: none;
+    animation-timing-function: ease-in;
+  }
+  93% {
+    transform: translateY(3px) scaleY(0.8)
+  }
+  100% {
+    animation-timing-function: ease-out;
+  }
+}
