@@ -17,6 +17,9 @@
 <link href="https://fonts.googleapis.com/css2?family=Cardo:ital,wght@0,400;0,700;1,400&family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=DM+Serif+Text:ital@0;1&family=Geist+Mono:wght@100..900&family=Host+Grotesk:ital,wght@0,300..800;1,300..800&family=Jaro:opsz@6..72&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Manrope:wght@200..800&family=Orbitron:wght@400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&family=Ysabeau+SC:wght@1..1000&display=swap" rel="stylesheet">
     <section class="truths">
       <article>
+        <div id="loading-screen">
+  <img src="724 Sem Título_20250107135947.png" height="80px" width="160"> <p>Conosco a verdade nunca é desperdiçada.</p>
+</div>
         <p>"Eu percebi só agora como amor, e amizades eram apenas ilusões, algo que tem um tempo determinado para acabar, e quando acaba, leva a metade de você."</p>
       </article>
       <article>
@@ -149,3 +152,30 @@
   </footer>
 </body>
 </html>
+<script>
+  // Função para gerar um número aleatório entre dois valores
+  function getRandomTime(min, max) {
+    return Math.random() * (max - min) + min;
+  }
+
+  // Altere os tempos aleatórios para o carregamento
+  function startLoadingAnimation() {
+    const logo = document.querySelector("#loading-screen img");
+    const randomTime = getRandomTime(3, 20); // Tempo entre 3s e 20s
+    logo.style.animationDuration = `${randomTime}s`;
+  }
+
+  // Esconder a tela de carregamento após tempo aleatório
+  function stopLoading() {
+    const loadingScreen = document.getElementById("loading-screen");
+    setTimeout(() => {
+      loadingScreen.style.display = "none";
+    }, getRandomTime(3, 20) * 1000); // Multiplica por 1000 para ms
+  }
+
+  // Inicie o carregamento
+  document.addEventListener("DOMContentLoaded", () => {
+    startLoadingAnimation();
+    stopLoading();
+  });
+</script>
